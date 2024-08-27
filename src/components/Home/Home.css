@@ -1,0 +1,264 @@
+.home {
+  height: 70vh;
+  width: 100vw;
+  background-color: #00a4ccff;
+  display: flex;
+  justify-content: flex-end;
+  .mainMenu {
+    padding: 20px;
+    background-color: #f95700ff;
+    width: 40vw;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    animation: mainMenuAnimation 0.5s ease-in-out forwards;
+    h4 {
+      margin-top: 80px;
+      text-align: center;
+      font-size: 2rem;
+      color: #cdb599ff;
+      cursor: none;
+    }
+    .menuItem {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      align-items: center;
+      button {
+        background-color: #adefd1ff;
+        color: #00203fff;
+        padding: 10px 25px;
+        width: 300px;
+        height: 50px;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        outline: none;
+        border: none;
+        box-shadow: none;
+        transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out,
+          flex-direction 1s ease-in-out;
+      }
+
+      button:hover {
+        background-color: #00203fff;
+        color: #adefd1ff;
+        flex-direction: row-reverse;
+      }
+    }
+  }
+}
+.listModal {
+  position: absolute;
+  height: 70vh;
+  width: 57vw;
+  left: 0;
+  background-color: #ed2b33ff;
+  transform: translateX(-57vw);
+  animation: nodelAnimation 0.5s ease-in-out forwards;
+
+  .modal-content {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-around;
+
+    .modelHead {
+      display: flex;
+      color: #e0c568ff;
+      justify-content: center;
+      align-items: center;
+      h4 {
+        text-align: center;
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-weight: 400;
+        text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+      }
+      button {
+        color: #e0c568ff;
+        position: absolute;
+        right: 30px;
+        transition: color 0.5s ease-in-out scale 0.5s ease-in-out;
+      }
+      button:hover {
+        color: #9e1030ff;
+        scale: 1.2;
+      }
+    }
+    ul {
+      list-style: none;
+      overflow-y: scroll;
+      height: 55vh;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      scroll-behavior: smooth;
+      li {
+        margin: 5px;
+        padding: 15px;
+        background-color: #d85a7fff;
+
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #f0e1b9ff;
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 20%;
+        p {
+          font-size: 15px;
+          letter-spacing: 1px;
+          text-align: start;
+        }
+        .liInnerdiv {
+          display: flex;
+          gap: 5px;
+          flex-direction: column;
+          justify-content: center;
+          input {
+            flex: 1;
+            padding: 10px;
+            outline: none;
+            border: none;
+            background-color: transparent;
+            color: rgba(255, 255, 255, 0.788);
+            font-size: 15px;
+            letter-spacing: 1px;
+          }
+          .actionButtonForm {
+            display: flex;
+
+            align-items: center;
+            flex-direction: row;
+            flex: 1;
+            gap: 5px;
+            button {
+              padding: 5px 10px;
+              width: -webkit-fill-available;
+              border-radius: none;
+              box-shadow: none;
+              outline: none;
+              border: none;
+              background-color: #c7d3d4ff;
+              color: #603f83ff;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              transition: background-color 0.5s ease-in-out,
+                color 0.5s ease-in-out, flex-direction 1s ease-in-out;
+            }
+            button:hover {
+              background-color: #603f83ff;
+              color: #c7d3d4ff;
+              flex-direction: row-reverse;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.addContent {
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .addmodel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ce4a7eff;
+    padding: 20px;
+    height: 160px;
+    width: 250px;
+    justify-content: space-around;
+
+    input {
+      padding: 10px;
+      outline: none;
+      border: none;
+      background-color: transparent;
+      color: black;
+      font-size: 15px;
+      letter-spacing: 1px;
+    }
+    button {
+      padding: 10px 20px;
+      width: -webkit-fill-available;
+      box-shadow: none;
+      border-radius: none;
+      outline: none;
+      border: none;
+      background-color: #c7d3d4ff;
+      color: #603f83ff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out,
+        flex-direction 1s ease-in-out;
+    }
+    button:hover {
+      background-color: #603f83ff;
+      color: #c7d3d4ff;
+      flex-direction: row-reverse;
+    }
+  }
+}
+ul::-webkit-scrollbar-track {
+  background-color: #6dac4fff;
+}
+
+ul::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+  border-radius: 3px;
+}
+
+ul::-webkit-scrollbar-thumb {
+  background-color: #efefe8ff;
+  border: none;
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    clip-path: inset(100% 100% 0 0);
+    transform: translateX(-200px);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+    transform: translateX(0);
+  }
+}
+@keyframes nodelAnimation {
+  from {
+    opacity: 0;
+
+    transform: translateX(-57vw);
+  }
+  to {
+    opacity: 1;
+
+    transform: translateX(0);
+  }
+}
+@keyframes mainMenuAnimation {
+  from {
+    opacity: 0;
+
+    transform: translateX(40vw);
+  }
+  to {
+    opacity: 1;
+
+    transform: translateX(0);
+  }
+}

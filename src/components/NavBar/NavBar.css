@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+.navbar {
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+
+  background-color: #990011;
+  cursor: none;
+}
+.navbarComponent {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  margin-left: 30px;
+  margin-right: 30px;
+  width: 50px;
+  height: auto;
+  animation: slideFromTop 1s ease-in-out;
+}
+
+@keyframes slideFromTop {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateY(20px);
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.navLogo {
+  width: 100%;
+  display: flex;
+  letter-spacing: 10px;
+  padding: 5px;
+  color: #fcf6f5;
+  font-family: "Orbitron";
+  font-size: 20px;
+}
