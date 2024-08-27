@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/albumCollectionApp/static/css/main.61c31ef8.css",
+    "main.js": "/albumCollectionApp/static/js/main.c0eaa358.js",
+    "static/media/smlogo.png": "/albumCollectionApp/static/media/smlogo.4c0fabfd997e37a349e9.png",
+    "index.html": "/albumCollectionApp/index.html",
+    "main.61c31ef8.css.map": "/albumCollectionApp/static/css/main.61c31ef8.css.map",
+    "main.c0eaa358.js.map": "/albumCollectionApp/static/js/main.c0eaa358.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.61c31ef8.css",
+    "static/js/main.c0eaa358.js"
+  ]
+}
